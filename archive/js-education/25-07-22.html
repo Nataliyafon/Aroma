@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - начало</title>
+</head>
+<body>
+    <script>
+        // alert("Привет, мир!");//Выводим во всплывающее окно
+        // document.write("Привет, мир еще раз!");//Выводим в сам документ
+        // console.log("Привет, мир и здесь!");//Выводим в консоль
+
+        // let name = "Ivan";
+        // console.log("Hello, " + name); //конкатенация
+        // name = "Alex";
+        // console.log("Hello, " + name);
+        // var
+        // const
+
+        // let a = 12;
+        // let b = 4;
+        // let a;
+        // a = 8;
+        let a = +prompt("Введите первое число: ");
+        let b = +prompt("Введите второе число: ");
+        // a = parseInt(a); округляет
+        // b = parseInt(b);
+        a = Number(a);
+        b = Number(b);
+
+        console.log("a = " + a + " | b = " + b);
+        console.log("Сложение: " + (a + b));
+        console.log("Умножение: " + a * b);
+        console.log("Вычитание: " + (a - b));
+        console.log("Деление: " + a / b);
+        console.log("Возведение в степень: " + a ** b);
+        console.log("Остаток от деления: " + a % b);
+
+        let firastDigit = 10;
+        let secondDigit = 3;
+        let result = firastDigit % secondDigit;
+        console.log("Остаток от деления: " + result);
+
+        let message = "Hello!";
+        message = 123456; //лучше так не делать, желательно хранить тот тип данных, который был изначально ("Hello!" - строка, а 123456 - число)
+    </script>
+</body>
+</html>

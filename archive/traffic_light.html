@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Светофор</title>
+    <style>
+        * {
+            box-sizing: border-box; /* Значения полей и границ включаем в свойства ширины и высоты */
+        }
+        .container {
+            width: 200px; /* Задаём ширину элемента */
+            height: 400px; /* Задаём высоту элемента */
+            background-color: black; /* Задаём цвет фона элемента */
+            border: 5px solid gray; /* Задаём толщину, стиль и цвет границы вокруг элемента */
+            padding-top: 25px; /* Задаём внутренний отступ сверху */
+        }
+        .red, 
+        .yellow,
+        .green {
+            width: 100px; /* Задаём ширину элемента */
+            height: 100px; /* Задаём высоту элемента */
+            margin: auto; /* Указываем, что размер отступов от каждого края элемента будет автоматически рассчитан браузером */
+            border-radius: 50%; /* Устанавливаем радиус скругления в процентах относительно ширины блока */
+            border: solid gray 2px; /* Задаём стиль, цвет и толщину границы вокруг элемента */
+            margin-bottom: 20px; /* Задаём внешний отступ снизу */
+            box-shadow: inset 0 0 15px rgb(155, 160,155); /* Задаём цвет и толщину тени внутри лемента без сдвигов по x и y */
+            background-color: gray;
+            cursor: pointer;
+        }
+        .red:hover {
+            background-color: red; /* Задаём цвет фона элемента */
+        }
+        .yellow:hover {
+            background-color: yellow; /* Задаём цвет фона элемента */
+        }
+        .green:hover {
+            background-color: green; /* Задаём цвет фона элемента */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"</div>
+    </div>
+</body>
+</html>

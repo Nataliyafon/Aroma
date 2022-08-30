@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let change$ = 20;
+        let changeEuro = 15;
+        // change$ = Number(change$);
+        // changeEuro = Number(changeEuro);
+        // confirm ("Вы хотите купить доллары?") true
+        
+        let sumrub = +prompt ("Сколько рублей вы хотите обменять?", "");
+        let $orEuro = prompt ("Какую валюту Вы хотите приобрести?", "доллары/евро");
+        if ($orEuro == "доллары") alert("Сумма в долларах: " + sumrub / change$);
+        if ($orEuro == "евро") alert("Сумма в евро: " + sumrub / changeEuro);
+
+        
+    </script>
+</body>
+</html>

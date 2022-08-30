@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тернарный оператор и методы массивов</title>
+</head>
+<body>
+    <script>
+
+        function addSpecialNumbers(numbers) {
+            let specialNumbers = [];
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 3 == 0) {
+                    specialNumbers.push(numbers[i]);
+                }
+            }
+            return specialNumbers;
+        }
+        let arr = [12, 1, 2, 3, 6, 7, 9, 4];
+        console.log(addSpecialNumbers(arr));
+
+        
+        //let cars = ["Ford", "Audi", "BMW", "Opel"];
+
+        //метод reverse позволяет перевернуть порядок элементов массива
+        //cars.reverse();
+
+        //метод splice позволяет удалять/добавлять/заменять n элементов c определённой позиции
+        // cars.splice(1,2); //удалили 2 элемента, после первого элемента
+        // cars.splice(-1, 0, "Another car"); //добавили элемент на предпоследнее место(-1)
+        // console.log(cars);
+
+        //delete удаляет элемент массива, но не изменяет длину массива, оставляя элемент пустым
+        // delete cars[2];
+        // console.log(cars);
+
+        //метод pop удаляет элемент с конца массива
+        // cars.pop();
+        // console.log(cars);
+
+        //метод pop позволяет результат своей работы получить в переменную
+        // let car = cars.pop();
+        // console.log(car);
+
+        //метод shift удаляет элемент с начала массива
+
+        //метод unshift добавляет элемент в начало массива
+        // cars.unshift("Opel");
+        // console.log(cars);
+
+        //метод push добавляет элемент в конец массива, изменяет массив
+        // cars.push("Opel", "Mazda"); 
+        // console.log(cars);
+
+        // console.log(cars);
+        // cars[cars.length] = "Opel";
+        // console.log(cars);
+        // cars[10] = "Mazda";
+        // console.log(cars);
+        // cars.length = 12;
+        // console.log(cars);
+
+    // let a = 5;
+    // let b = 7;
+    // let c;
+
+    // if (a < b) {
+    //     c = a;
+    // } else {
+    //     c = b;
+    // }
+    // console.log(c);
+
+    // a < b ? (c = a) : (c = b); // запись при помощи тернарного оператора
+    </script>
+
+</body>
+</html>

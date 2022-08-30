@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2780460808.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+    <style>
+      /* body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      h1,h2,h3,h4 {
+        font-weight: 700;
+      } */
+      /* .fa-solid {
+        color: rgb(0, 255, 255);
+      } */
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .fa-solid {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(249, 228, 4)), to(rgb(0, 255, 255)));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* .box {
+        height: 300px;
+        background: blue;
+      } */
+      .news {
+        background-image: url(/img/slider-2.jpg);
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+      }
+      .box-news {
+        margin: auto;
+        max-width: 18rem;
+        height: auto;
+        border: 1px solid rgb(117, 232, 56);
+        padding: 1rem;
+        background-color: rgb(63, 222, 185,0.6);
+        border-radius: 4px;
+        box-shadow: 0 0 10px 10px rgb(117, 232, 56, 0.6);
+        text-align: center;
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(130, 206, 238);">
+      <a class="navbar-brand" href="/"><img src="/img/fontisto_automobile.png" alt="Logo"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="traffic_light.html">Светофор<!-- <span class="sr-only">(текущая)</span> --></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="position.html">Ссылка</a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Выпадающий список
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Действие</a>
+          <a class="dropdown-item" href="#">Другое действие</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Что-то еще здесь</a>
+        </div>
+      </li> -->
+          <li class="nav-item">
+        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенный</a>
+      </li> -->
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Поиск">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    </form> -->
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/slider-1.jpg" class="d-block w-100" alt="Море">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider-2.jpg" class="d-block w-100" alt="Море">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider-3.jpg" class="d-block w-100" alt="Море">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Предыдущий</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Следующий</span>
+      </a>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-4 p-5"><div class="card bg-info text-center py-5 border"><a href="traffic_light.html"><i class="fa-solid fa-traffic-light fa-3x"></i></a>
+        </div>
+      </div>
+        <div class="col-md-4 p-5"><div class="card bg-info text-center py-5 border"><a href="#"><i class="fa-solid fa-arrows-up-down-left-right fa-3x"></i></a>
+        </div>
+      </div>
+        <div class="col-md-4 p-5"><div class="card bg-info text-center py-5 border"><a href="#"><i class="fa-solid fa-address-book fa-3x"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex news">
+      <div class="box-news">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic reiciendis, architecto obcaecati in a dolores at blanditiis quam delectus sapiente, corrupti, tempora optio ex? Ut ab animi assumenda neque.
+      </div>
+    </div>
+    <div class="container my-5">
+      <h1 class="text-center text-primary mb-4">Связаться с нами</h1>
+      <div class="row">
+        <div class="col-md-4"><h2>Контакты</h2>
+          <h4>Адрес:</h4>
+          <p>г. Москва, ул. Академика Скрябина, д. 9, стр. 4</p>
+          <h4>Телефон:</h4><a href="tel:+74952605289">+7 (495) 260-52-89</a>
+          <h4>E-mail:</h4><a href="mailto:hotline@eduprof.ru">hotline@eduprof.ru</a>
+          <h4>График работы:</h4>
+          <p>Понедельник - четверг: с 8-30 по 17-15, пятница: с 8-30 по 16-00</p>
+        </div>
+        <div class="col-md-8">
+          <form action="">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="2" placeholder="Ваше сообщение"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn bg-primary form-control text-white">
+            </div>
+          </form>
+          <div class="row">
+        <div class="col-md-3 p-3"><div class="card bg-white text-center py-3 border"><a href="https://api.whatsapp.com/send?phone=74952605289"target="_blank" title="Написать в Whatsapp" rel="noopener noreferrer"><i class="fa fa-whatsapp" style="background-color: rgb(23, 244, 7); color: white; border-radius: 10%;"></i></a>
+        </div>
+      </div>
+        <div class="col-md-3 p-3"><div class="card bg-white text-center py-3 border"><a href="https://t.me/+O7LIFUjfP741MzQy" target="_blank" title="Вступить в группу Telegram" rel="noopener noreferrer"><i class="fa fa-telegram" style="color: rgb(0, 195, 255);"></i></a>
+        </div>
+      </div>
+        <div class="col-md-3 p-3"><div class="card bg-white text-center py-3 border"><a href="https://vk.com/eduprof" target="_blank" title="Подписаться Вконтакте" rel="noopener noreferrer"><i class="fa fa-vk"></i></a>
+        </div>
+        </div>
+        <div class="col-md-3 p-3"><div class="card bg-white text-center py-3 border"><a href="https://www.youtube.com/channel/UCFfXpYGZAbLWt8BYmYw14Sw" target="_blank" title="Подписаться на YouTube" rel="noopener noreferrer"><i class="fa fa-youtube" style="color: red;"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid mb-5">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf82fa40a825f59f54e07bdb4ed199ebe23a45e899c39649cc7d0445f1d21797&amp;width=100%25&amp;height=565&amp;lang=ru_RU&amp;scroll=true"></script>
+    
+
+<footer>
+  <div class="container py-5 text-center">© <script>document.write(new Date().getFullYear())</script> Все права защищены</div>
+</footer>
+</div>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-4 border p-5"><div class="box"></div></div>
+        <div class="col-md-4 border p-5"><div class="box"></div></div>
+        <div class="col-md-4 border p-5"><div class="box"></div></div>
+      </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

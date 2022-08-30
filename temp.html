@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+      :root {
+        --primary-color: rgb(227, 109, 109);
+        --unit: 10rem;
+        --p-h: 221;
+        --p-s: 71%;
+        --p-l: 48%;
+      }
+      .section {
+        color: var(--primary-color);
+        margin-bottom: var(--unit);
+        background-color: hsl(var(--p-h), var(--p-s), var(--p-l));
+      }
+      .section:hover {
+        --p-l: 38%;
+      }
+      .section .article {
+        --primary-color: red;
+        --size: 20px;
+        width: var(--size);
+        height: var(--size);
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      element.style.getPropertyValue("--size");
+      getComputedStyle(element).getPropertyValue("--p-l");
+    </script>
+  </body>
+</html>

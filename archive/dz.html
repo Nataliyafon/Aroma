@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container1 {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between;           
+            margin: auto;            
+        }
+        .container2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 50px;
+        }
+        .container3 {
+            width: 130px;
+            height: 100px;
+            position: absolute;
+            bottom: 50px;
+            left: 500px;
+        }
+        .container4 {
+            width: 130px;
+            height: 100px;
+            position: absolute;
+            bottom: 50px;
+            left: 1100px;
+        }
+        .red1, .plum1, .darkgreen1, .red2, .plum2, .darkgreen2, .red3, .plum3, .darkgreen3, .red4, .plum4, .darkgreen4, .red5 {
+            width: 30px;
+            height: 30px;
+            border: 1.5px solid;
+        }
+        .red1 {
+            color: red;
+            position: absolute;
+            margin-left: 70px;              
+            top: 8px;          
+        }
+        .plum1 {
+            color: plum;
+            position: relative;
+            margin-left: 35px;
+            margin-top: 35px;
+        }
+        .darkgreen1 {
+            color: darkgreen;
+            position: relative;
+            margin-left: 35px;
+            margin-top: 35px;
+        }
+        .red2 {
+            color: red;            
+            
+        }
+        .plum2 {
+            color: plum;
+
+        }
+        .darkgreen2 {
+            color: darkgreen;
+        }
+        .red3 {
+            color: red;   
+            position: absolute;         
+            right: 90px; 
+            top: 8px;        
+        }
+        .plum3 {
+            color: plum;   
+            position: relative;         
+            left: 20px; 
+            top: 20px; 
+        }
+        .darkgreen3 {
+            color: darkgreen;
+            position: relative;  
+            left: 20px; 
+            top: 20px; 
+        }
+        .red4, .plum4, .darkgreen4 {
+            border: none;
+        }
+        .red4 {
+            background-color: red;   
+            position: absolute;         
+            left: 20px; 
+            top: 10px;    
+        }
+        .plum4 {
+            background-color: rgb(139, 68, 194);   
+            position: relative;         
+            left: 20px; 
+            top: 20px; 
+        }
+        .darkgreen4 {
+            background-color: darkgreen;
+            position: relative;
+            left: 20px; 
+            top: 20px; 
+        }
+        .block {
+            width: 130px;
+            height: 100px;
+            position: absolute;
+            border: 1.5px solid green;
+            padding: 25px;
+        }
+        .red5 {
+            color: red;
+            position: relative;
+            
+        }
+        .block1 {
+            width: 130px;
+            height: 100px;
+            position: absolute;
+            background-color: rgb(67, 228, 140);
+            
+        }
+        .white5, .white6 {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+        }
+        .white5 {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        .white6 {
+            margin-top: 10px;
+            margin-left: 85px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+            <div class="red2"></div>
+            <div class="plum2"></div>
+            <div class="darkgreen2"></div>
+    </div>
+    <div class="container2">
+        <div class="red4">
+            <div class="plum4">
+                <div class="darkgreen4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="block">
+            <div class="red5"></div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="block1">
+            <div class="white5"></div>
+            <div class="white6"></div>
+        </div>
+    </div>
+    <div>
+        <div class="red1">
+            <div class="plum1">
+                <div class="darkgreen1"></div>
+            </div>
+        </div> 
+    </div>
+        <div class="red3">
+            <div class="plum3">
+                <div class="darkgreen3"></div>
+            </div>
+        </div>   
+</body>
+</html>

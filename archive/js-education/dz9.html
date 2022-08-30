@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+
+        } */
+        #block2, #block3, #block1 {
+            width: 4rem;
+            height: 4rem;
+            background-color: aqua;
+            border: 1px solid blue;
+            position: absolute;
+            
+        }
+        .block4 {
+            width: 10rem;
+            height: 10rem;
+            background-color: navajowhite;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-4 block" >
+                
+            </div>
+            <div class="col-md-4">
+                <div class="block"></div>
+                <div class="block1"></div>
+            </div>
+            <div class="col-md-4 block"></div>
+        </div>
+        </div>
+    </div> -->
+    <div id="block1" class="bl"></div>
+    <div class="block4"></div>
+    <div id="block2" class="bl" style="right: 0px;"></div>
+    <div id="block3" class="bl"></div>
+    <script>
+        let blocks = document.querySelectorAll(".bl");
+        for (block of blocks) {
+        
+        // let disBtn = document.getElementById("disBtn");
+        block.onmousedown = function() {
+        document.addEventListener("mousemove", moveElement);
+        document.onmouseup = function() {
+            document.removeEventListener("mousemove", moveElement)
+        }
+        };
+        
+        function moveElement(event) {
+            let x = event.clientX - 75;
+            let y = event.clientY - 75;
+
+            block.style.top = y + "px";
+            block.style.left = x +"px";
+        }
+        function changeColor() {
+            let red = Math.round(Math.random()*255);
+            let green = Math.round(Math.random()*255);
+            let blue = Math.round(Math.random()*255);
+
+            block.style.background = `rgb(${red}, ${green}, ${blue})`;
+        }
+        block.addEventListener("click", changeColor);
+
+        // disBtn.addEventListener("click", function() {
+        //     console.log("Слушатель");
+        //     block.removeEventListener("click", changeColor);
+        // })
+        }
+
+    </script>
+</body>
+</html>

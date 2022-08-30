@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* body {
+            font-size: 1.5rem;
+            color: crimson;
+        }
+        .edit {
+            color: darkolivegreen;
+            cursor: pointer;
+        }
+        .edit:hover {
+            color: green;
+        } */
+        #dragElement {
+            width: 150px;
+            height: 150px;
+            background: red;
+            border: 1px solid black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="dragElement"></div>
+    <!-- <button id="disBtn">Заблокировать изменение цвета</button> -->
+
+    <script>
+        let dragElement = document.getElementById("dragElement");
+        
+        // let disBtn = document.getElementById("disBtn");
+        dragElement.onmousedown = function() {
+        document.addEventListener("mousemove", moveElement);
+        document.onmouseup = function() {
+            document.removeEventListener("mousemove", moveElement)
+        }
+        };
+        
+        function moveElement(event) {
+            let x = event.clientX - 75;
+            let y = event.clientY - 75;
+
+            dragElement.style.top = y + "px";
+            dragElement.style.left = x +"px";
+            // console.log(event);
+}
+        // dragElement.addEventListener("click", function() {
+        //     console.log("Вызвана функция обработчик");
+        // });
+
+        function changeColor() {
+            let red = Math.round(Math.random()*255);
+            let green = Math.round(Math.random()*255);
+            let blue = Math.round(Math.random()*255);
+
+            dragElement.style.background = `rgb(${red}, ${green}, ${blue})`;
+        }
+        dragElement.addEventListener("click", changeColor);
+
+        disBtn.addEventListener("click", function() {
+            console.log("Слушатель");
+            dragElement.removeEventListener("click", changeColor);
+        })
+
+        // function clickHandler() {
+        //     console.log("Вызвана функция обработчик")
+        // }
+
+        // dragElement.addEventListener("click", clickHandler);
+
+        // dragElement.onclick = function() {
+        //     console.log("Клик по элементу произошёл");
+        // }
+    </script>
+<!-- 
+    <p><strong>Имя: </strong><span>Иван</span> <span onclick="editName(this)" class="edit">[Редактировать]</span></p>
+    <p><strong>Фамилия: </strong><span>Иванов</span> <span onclick="editName(this)" class="edit">[Редактировать]</span></p>
+    <!-- <div id="element">
+        <p>Строка 1</p>
+        <p>Строка 2</p>
+        <p>Строка 3</p>
+        <p>Строка 4</p>
+    </div>
+
+    <footer></footer> -->
+
+    <!-- <script>
+        // let element = document.getElementById("element");
+
+        function editName(element) {
+            let value = element.previousElementSibling.innerText;
+            element.previousElementSibling.innerHTML = `<input type="text" value="${value}"/>`;
+
+        }
+    </script> -->
+</body>
+</html>

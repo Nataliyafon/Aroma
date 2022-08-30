@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиазапросы</title>
+    <style>
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+        .block {
+            display: inline-block;
+            width: 500px;
+        }
+        .block img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 990px) {
+            .container {
+                width: 100%;
+            }
+            .block {
+                display: block;
+                width: 100%;
+            }
+            .block p {
+                font-size: 1.2rem;
+            }
+        }
+        /* @media (условия) {
+            CSS который будет выполнен для данного условия
+        } */
+        /* @media (orientation: landscape) {
+            body {
+                background: rgb(132, 39, 39);
+            }
+        } */
+        /* @media (max-width: 1400px) {
+        p {
+            color: blue;
+            font-size: 1.5rem;
+        }
+        } */
+        /* @amedia print {
+            body {
+                font-size: 12px;
+            }
+            img {
+                display: none;
+            }
+        } */
+        @media screen and (min-width: 30rem) and (operation: portrait) {........}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block"><img src="/img/slon.jpg" alt="" width="480"></div>
+        <div class="block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatem in accusamus beatae error recusandae delectus odit suscipit enim, nobis quaerat eveniet atque voluptates vel dolor neque temporibus magni ad!</p>
+        </div>
+    </div>
+</body>
+</html>

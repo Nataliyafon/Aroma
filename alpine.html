@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Alpine & Tailwind</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+        x-data="{
+        newText: '',
+        people: ['Antonio', 'Sergio', 'Alessio'],
+        addPerson() {
+            this.people.push(this.newText);
+        }
+        }"
+        class="bg-red-200 min-h-screen p-20"
+    >
+        <form x-on:submit.prevent = "addPerson">
+            <input type="text" x-model=" newText" class="p-3 shadow-2xl rounded">
+        </form>
+        <ul>
+            <template x-for="person in people">
+                <li x-text="person"></li>
+            </template>
+
+        </ul>
+    </div>
+    <!-- <div x-data="{isShowing: false}" class="bg-red-500 p-5 hover:bg-red-700 hover:text-white">
+        <button @click="isShowing = !isShowing" class="w-48 h-24 bg-gray-400">На дворе какое время года?</button>
+        <div x-show="isShowing" class="w-24 h-12">На дворе лето!</div>
+    </div> -->
+    <!-- <div x-data="{message: 'Hi, people!'}">
+        <input x-model.lazy="message">
+        <p>Message: <strong x-text="message"></strong></p>
+    </div> -->
+    <!-- <button x-data x-on:click="alert('Кликнул по кнопке')">Нажми на меня</button>
+    <button x-data @click="alert('Кликнул по кнопке')">Нажми на меня</button>
+    <button x-data @click="alert('Кликнул по кнопке')">Нажми на меня</button> -->
+    <!-- <button>Нажми на меня</button>
+    <button>Нажми на меня</button> -->
+
+    <script>
+      // let btn = document.querySelector("button");
+
+      // btn.addEventListener("click", ()=>{
+      //     alert("Кликнул по кнопке");
+      // })
+    </script>
+  </body>
+</html>

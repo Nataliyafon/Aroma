@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каскадность и специфичность</title>
+    <style>
+        button {
+            color: red;
+        }
+        button {
+            color: blue;
+        }
+
+        /* p {
+            color: green !important; Так делать не нужно!
+        } */
+        p {
+            color: green;
+        }
+        #blue { /* Самый высокий приоритет */
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Привет, я кнопка с синим текстом</button>
+
+    <p class="red" id="blue">Так какого же цвета будет текст?</p>
+
+    <div class="red blue">Текст</div>
+    <div class="blue red">Текст</div>
+    
+</body>
+</html>
